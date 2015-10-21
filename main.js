@@ -196,3 +196,5 @@ var emptyAdmin = SuperUser.createDefaultSuperUser();
 console.log(emptyAdmin);
 
 console.log('=================');
+
+//# sourceMappingURL=main.js.map

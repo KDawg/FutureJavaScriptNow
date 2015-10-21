@@ -9,7 +9,8 @@ Use [BabelJS](https://babeljs.io/) to [transpile](https://en.wikipedia.org/wiki/
 Install BabelJS in **Terminal** with this command: `npm install -g babel`
 
 ## Running
-Compile the entire `src` directory and output it to the one concatenated file running in **Terminal**: `babel ./code --out-file main.js --watch`
+Compile the entire `src` directory and output it to the one concatenated file running in **Terminal**: `babel ./code --out-file main.js --watch --source-maps`
+[Source-maps allow Chrome dev tools](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) sort out how main.js relates to your original source code.
 
 pen the developer tools and look at the *Console* to see all of the program results. Read the code to see why the run-time output is pertinent.
 

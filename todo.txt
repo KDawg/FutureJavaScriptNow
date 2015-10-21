@@ -1,5 +1,4 @@
 
-_ Iterators + For..Of (https://babeljs.io/docs/learn-es2015/#iterators-for-of)
 _ Chrome browser debugging w/SourceMaps
 
 _ Modules Import/Export (https://babeljs.io/docs/learn-es2015/#modules)
@@ -16,10 +15,8 @@ X Install Babel
   npm install -g babel
 
 X How to compile at the command line
-  babel ./code --out-file main.js --watch
 
-  babel app.js --watch --out-file app-compiled.js
-  babel app.js --watch --out-file app-compiled.js --source-maps
+  babel ./code --out-file main.js --watch --source-maps
 
   Compile the entire src directory and output it to the one concatenated file.
     babel ./code --out-file main.js --watch
