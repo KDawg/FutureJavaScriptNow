@@ -1,7 +1,9 @@
 
-_ Modules Import/Export (https://babeljs.io/docs/learn-es2015/#modules)
 _ Iterators + For..Of (https://babeljs.io/docs/learn-es2015/#iterators-for-of)
 _ Chrome browser debugging w/SourceMaps
+
+_ Modules Import/Export (https://babeljs.io/docs/learn-es2015/#modules)
+_ Map/Set (https://babeljs.io/docs/learn-es2015/#map-set-weak-map-weak-set)
 
 X Classes
 X SubClass
@@ -9,7 +11,6 @@ X static class function member
 X Arrow Functions (short-hand for anonymous functions)
 X Let and Const
 X String Interpolation
-_ Map/Set (https://babeljs.io/docs/learn-es2015/#map-set-weak-map-weak-set)
 
 X Install Babel
   npm install -g babel

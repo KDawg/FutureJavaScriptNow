@@ -1,5 +1,6 @@
 
 console.log('ES2015 R&D Suite Executing...');
+console.log('=================');
 
 TimeSucker();
 TimeSucker(100000);
@@ -35,4 +36,6 @@ function ReportTheSuck() {
     console.log(`${entry.duration} ms of sucking`);
     // string interpolation
   });
+
+  console.log('=================');
 }

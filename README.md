@@ -2,6 +2,8 @@
 # ES2015 R&D
 
 ## Introducing
+I want to start leaning (and using) now the new JavaScript syntax rolling out to browsers as future updates.
+
 Use [BabelJS](https://babeljs.io/) to [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) from ES2015 to plain old JavaScript running in any modern browser. Use the future hotness now!
 
 Install BabelJS in **Terminal** with this command: `npm install -g babel`

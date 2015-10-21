@@ -1,6 +1,7 @@
 'use strict';
 
 console.log('ES2015 R&D Suite Executing...');
+console.log('=================');
 
 TimeSucker();
 TimeSucker(100000);
@@ -36,7 +37,35 @@ function ReportTheSuck() {
     console.log(entry.duration + ' ms of sucking');
     // string interpolation
   });
+
+  console.log('=================');
 }
+'use strict';
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
+
+(function () {
+
+  var primary = undefined,
+      secondary = undefined,
+      allColors = undefined;
+
+  function setupColors() {
+    primary = ['red', 'green', 'blue'];
+    secondary = ['yellow', 'magenta', 'cyan'];
+
+    allColors = [].concat(_toConsumableArray(primary), ['white', 'black'], _toConsumableArray(secondary));
+    // spread operator (spreading elements of an iterable collection)
+  }
+
+  function reportColors() {
+    console.log('Let\'s include all of the colors: ' + allColors);
+    console.log('=================');
+  }
+
+  setupColors();
+  reportColors();
+})();
 'use strict';
 
 var _get = function get(_x4, _x5, _x6) { var _again = true; _function: while (_again) { var object = _x4, property = _x5, receiver = _x6; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x4 = parent; _x5 = property; _x6 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
@@ -167,33 +196,3 @@ var emptyAdmin = SuperUser.createDefaultSuperUser();
 console.log(emptyAdmin);
 
 console.log('=================');
-
-// TODO: refactor this up as a module called by app.js
-//   .setup()
-//   .render()
-
-'use strict';
-
-function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
-
-(function () {
-
-  var primary = undefined,
-      secondary = undefined,
-      allColors = undefined;
-
-  function setupColors() {
-    primary = ['red', 'green', 'blue'];
-    secondary = ['yellow', 'magenta', 'cyan'];
-
-    allColors = [].concat(_toConsumableArray(primary), ['white', 'black'], _toConsumableArray(secondary));
-    // spread operator (spreading elements of an iterable collection)
-  }
-
-  function reportColors() {
-    console.log('Let\'s include all of the colors: ' + allColors);
-  }
-
-  setupColors();
-  reportColors();
-})();
