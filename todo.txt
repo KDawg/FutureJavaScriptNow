@@ -1,0 +1,28 @@
+
+_ Modules Import/Export (https://babeljs.io/docs/learn-es2015/#modules)
+_ Iterators + For..Of (https://babeljs.io/docs/learn-es2015/#iterators-for-of)
+_ Chrome browser debugging w/SourceMaps
+
+X Classes
+X SubClass
+X static class function member
+X Arrow Functions (short-hand for anonymous functions)
+X Let and Const
+X String Interpolation
+_ Map/Set (https://babeljs.io/docs/learn-es2015/#map-set-weak-map-weak-set)
+
+X Install Babel
+  npm install -g babel
+
+X How to compile at the command line
+  babel ./code --out-file main.js --watch
+
+  babel app.js --watch --out-file app-compiled.js
+  babel app.js --watch --out-file app-compiled.js --source-maps
+
+  Compile the entire src directory and output it to the one concatenated file.
+    babel ./code --out-file main.js --watch
+
+_ Use Babel external helpers (a run-time library) ?
+_ Ensure using "loose mode"?
+_ Whitelist our transformers?
