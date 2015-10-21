@@ -1,5 +1,5 @@
 
-_ Chrome browser debugging w/SourceMaps
+X Chrome browser debugging w/SourceMaps
 
 _ Modules Import/Export (https://babeljs.io/docs/learn-es2015/#modules)
 _ Map/Set (https://babeljs.io/docs/learn-es2015/#map-set-weak-map-weak-set)
