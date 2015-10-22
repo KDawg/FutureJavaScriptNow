@@ -2,34 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ES2015 R&D</title>
+  <title>ES2015 (JavaScript.Next) R&D</title>
 </head>
 <body>
 
-<h2>ES2015 R&D</h2>
+<h2>ES2015 (JavaScript.Next) R&D</h2>
 
 <h3>Introducing</h3>
 
-<p>Use <a href="https://babeljs.io/">BabelJS</a> to <a
-  href="https://en.wikipedia.org/wiki/Source-to-source_compiler">transpile</a>
-  from ES2015 to plain old JS</p>
+<p>JavaScript is changing. Significant new syntax improvements will make it
+  a very different looking language. Browser makers are slowly implementing
+  the updates as you read this.</p>
 
-<p>Install BabelJS in <strong>Terminal</strong> with this command: <code>npm
-  install -g babel</code></p>
+<p>To keep current I want to learn what's coming
+  now. That sounds difficult, but we can use <a href="https://babeljs.io/">BabelJS</a>
+  to <a href="https://en.wikipedia.org/wiki/Source-to-source_compiler">transpile</a>
+  code written in new ES2015 syntax to plain old JS that runs in any browser.
+  You can have the future now!</p>
+
+<h3>Learning Specific ES2015 Features</h3>
+
+<ul>
+  <li>const variables - global in app.js</li>
+  <li>default values - TimeSucker() in app.js</li>
+  <li>let for scoped variables - TimeSucker() in app.js</li>
+  <li>arrow anonymous functions - ReportTheSuck() in app.js</li>
+  <li>string interpolation - ReportTheSuck() in app.js</li>
+  <li>spread operator - setupColors() in app.js</li>
+  <li>class, subclass, super, static, getters, setters - user.js</li>
+  <li>more exist for you to discover!</li>
+</ul>
+
+<h3>Installing BabelJS for ES2015 Now</h3>
+
+<p>Install BabelJS in OSX <strong>Terminal</strong> with this command:</p>
+<code>npm install -g babel</code>
 
 <h3>Running</h3>
 
 <p>Compile the entire <code>src</code> directory and output it to the one
-  concatenated file running in <strong>Terminal</strong>:</p>
+  concatenated file. Do this by running in the project's main subdir
+  <strong>Terminal</strong>:</p>
 <code>babel ./code --out-file main.js --watch --source-maps</code>
 
-<p>Open the <em>Chrome Developer Tools</em> and look at the <em>Console</em> to see all of the
-  program results. Read the code to see why the run-time output is interesting.
+<p>Open the <em>Chrome Developer Tools</em> and look at the <em>Console</em>
+  seeing program results. Read the code and confirm why the run-time output is
+  interesting.
 </p>
 
-<p>Discover the source code that BabelJS compiles into <code>main.js</code>.</p>
+<p>Discover the source code that BabelJS compiles to <code>main.js</code>. It's
+  fascinating how the tool's authors are leveraging JavaScript as it exists today.</p>
 
-<h3>Learning</h3>
+<h3>Debugging</h3>
+
+<p>Debugging code in written in ES2015 and transpiled into plain old J/S must be horrible!
+  Browsers are machines and don't care what the mangled output of BabelJS looks like.
+  Programmers are human beings, and we want to read rational things. How can we possibly
+  make any sense of original authored code and what's written after?</p>
+
+<p>Don't have to, and it's wonderful.</p>
+
+<p> Chrome has <a
+  href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">source-maps</a>
+  and BabelJS writes them.
+  Because of that, when you open up the <em>dev tools</em>, you'll see your original code
+  as you wrote it in ES2015. Set break points, single step, inspect variables. It's
+  exactly as you want it.</p>
+
+<h3>Additional Reading</h3>
 
 <p>I enjoyed reading <a href="https://github.com/lukehoban/es6features">Luke
   Hoban's</a> summary on ES2015 features.</p>
@@ -40,6 +80,27 @@
 
 <p>Many refer to the <a href="https://kangax.github.io/compat-table/es6/">Kangex
   table</a> tracking browser compatibility.</p>
+
+<h3>Acknowledging</h3>
+
+<p>I had the great fortune of giving a talk called <a
+  href="http://www.slideshare.net/KaDawg/measuring-the-mobile-experience-the-analytics-of-handheld-ux">Measuring
+  the Mobile Experience: The Analytics of Handheld UX</a> at <a
+  href="http://www.html5devconf.com/speakers.html">HTML5DevConf
+  in San Fransisco</a> in Oct 2015.</p>
+
+<p>Also an attendee, I dropped in on a session by David Greenspan. His call to
+  action was <em>learn ES2015 now</em> - and so I am! All of this work is a result
+  of his influence.</p>
+
+<h3>Bonus</h3>
+
+<p>Some of this work takes advantage of the browser's
+  <a href="http://www.html5rocks.com/en/tutorials/webperformance/usertiming/">User
+    Timing</a> API for high-resolution timers. APIs include:</p>
+<code>performance.mark(), .measure(), .getEntriesByType()</code>
+
+<p>These are applicable for a performance-monitoring system.</p>
 
 <script src="main.js"></script>
 

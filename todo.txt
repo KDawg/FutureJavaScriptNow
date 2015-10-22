@@ -1,7 +1,10 @@
 
-X Chrome browser debugging w/SourceMaps
-
 _ Modules Import/Export (https://babeljs.io/docs/learn-es2015/#modules)
+  _ create a new demo page
+  _ with new demo .js files
+  _ including require
+
+X Chrome browser debugging w/SourceMaps
 _ Map/Set (https://babeljs.io/docs/learn-es2015/#map-set-weak-map-weak-set)
 
 X Classes
@@ -21,6 +24,6 @@ X How to compile at the command line
   Compile the entire src directory and output it to the one concatenated file.
     babel ./code --out-file main.js --watch
 
-_ Use Babel external helpers (a run-time library) ?
 _ Ensure using "loose mode"?
 _ Whitelist our transformers?
+_ Use Babel external helpers (a run-time library) ?

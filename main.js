@@ -3,9 +3,13 @@
 console.log('ES2015 R&D Suite Executing...');
 console.log('=================');
 
+var MEDIUM_TIME = 100000;
+var LARGE_TIME = 1000000;
+// constant variables
+
 TimeSucker();
-TimeSucker(100000);
-TimeSucker(1000000);
+TimeSucker(MEDIUM_TIME);
+TimeSucker(LARGE_TIME);
 ReportTheSuck();
 
 function TimeSucker() {
@@ -60,6 +64,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
   function reportColors() {
     console.log('Let\'s include all of the colors: ' + allColors);
+    // string interpolation
     console.log('=================');
   }
 
@@ -129,6 +134,7 @@ var User = (function () {
     set: function set(newHandle) {
       // setter accessor
       var TWITTER_PREFIX = '@';
+      // constant value
 
       this.twitterHandle = TWITTER_PREFIX + newHandle;
     }

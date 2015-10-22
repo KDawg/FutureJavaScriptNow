@@ -2,9 +2,13 @@
 console.log('ES2015 R&D Suite Executing...');
 console.log('=================');
 
+const MEDIUM_TIME = 100000;
+const LARGE_TIME = 1000000;
+// constant variables
+
 TimeSucker();
-TimeSucker(100000);
-TimeSucker(1000000);
+TimeSucker(MEDIUM_TIME);
+TimeSucker(LARGE_TIME);
 ReportTheSuck();
 
 

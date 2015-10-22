@@ -29,6 +29,7 @@ class User {
   set handle(newHandle) {
     // setter accessor
     const TWITTER_PREFIX = '@';
+    // constant value
 
     this.twitterHandle = TWITTER_PREFIX + newHandle;
   }

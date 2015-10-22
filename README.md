@@ -1,33 +1,96 @@
 
-# ES2015 R&D
+<h2>ES2015 (JavaScript.Next) R&D</h2>
 
-## Introducing
-I want to start leaning (and using) now the new JavaScript syntax rolling out to browsers as future updates.
+<h3>Introducing</h3>
 
-Use [BabelJS](https://babeljs.io/) to [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) from ES2015 to plain old JavaScript running in any modern browser. Use the future hotness now!
+<p>JavaScript is changing. Significant new syntax improvements will make it
+  a very different looking language. Browser makers are slowly implementing
+  the updates as you read this.</p>
 
-Install BabelJS in **Terminal** with this command: `npm install -g babel`
+<p>To keep current I want to learn what's coming
+  now. That sounds difficult, but we can use <a href="https://babeljs.io/">BabelJS</a>
+  to <a href="https://en.wikipedia.org/wiki/Source-to-source_compiler">transpile</a>
+  code written in new ES2015 syntax to plain old JS that runs in any browser.
+  You can have the future now!</p>
 
-## Running
-Compile the entire `src` directory and output it to the one concatenated file running in **Terminal**: `babel ./code --out-file main.js --watch --source-maps`
-[Source-maps allow Chrome dev tools](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) sort out how main.js relates to your original source code.
+<h3>Learning Specific ES2015 Features</h3>
 
-pen the developer tools and look at the *Console* to see all of the program results. Read the code to see why the run-time output is pertinent.
+<ul>
+  <li>const variables - global in app.js</li>
+  <li>default values - TimeSucker() in app.js</li>
+  <li>let for scoped variables - TimeSucker() in app.js</li>
+  <li>arrow anonymous functions - ReportTheSuck() in app.js</li>
+  <li>string interpolation - ReportTheSuck() in app.js</li>
+  <li>spread operator - setupColors() in app.js</li>
+  <li>class, subclass, super, static, getters, setters - user.js</li>
+  <li>more exist for you to discover!</li>
+</ul>
 
-Discover the J/S BabelJS compiles into `main.js`.
+<h3>Installing BabelJS for ES2015 Now</h3>
 
-## Learning
-I enjoyed reading [Luke Hoban's](https://github.com/lukehoban/es6features) summary on ES2015 features.
+<p>Install BabelJS in OSX <strong>Terminal</strong> with this command:</p>
+<code>npm install -g babel</code>
 
-This [survey of ES2015](http://es6-features.org/) is enlightening as well.
+<h3>Running</h3>
 
-JavaScript is based on ECMAScript-262 and if you read the [formal 6th edition specification](http://www.ecma-international.org/ecma-262/6.0/) you'll learn a lot, and you might go completely mental in the process.
+<p>Compile the entire <code>src</code> directory and output it to the one
+  concatenated file. Do this by running in the project's main subdir
+  <strong>Terminal</strong>:</p>
+<code>babel ./code --out-file main.js --watch --source-maps</code>
 
-Many refer to the [Kangex table](https://kangax.github.io/compat-table/es6/) tracking browser compatibility.
+<p>Open the <em>Chrome Developer Tools</em> and look at the <em>Console</em>
+  seeing program results. Read the code and confirm why the run-time output is
+  interesting.
+</p>
 
-## Get More Value from Me
-- Find me on [Twitter @KenTabor](https://twitter.com/kentabor)
-- My [articles on programming, UX, leadership](https://twitter.com/kentabor)
-- Get my [book on responsive web design and development](http://amzn.to/1GTWnic)
+<p>Discover the source code that BabelJS compiles to <code>main.js</code>. It's
+  fascinating how the tool's authors are leveraging JavaScript as it exists today.</p>
 
-Have fun, and let's do something awesome together!
+<h3>Debugging</h3>
+
+<p>Debugging code in written in ES2015 and transpiled into plain old J/S must be horrible!
+  Browsers are machines and don't care what the mangled output of BabelJS looks like.
+  Programmers are human beings, and we want to read rational things. How can we possibly
+  make any sense of original authored code and what's written after?</p>
+
+<p>Don't have to, and it's wonderful.</p>
+
+<p> Chrome has <a
+  href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">source-maps</a>
+  and BabelJS writes them.
+  Because of that, when you open up the <em>dev tools</em>, you'll see your original code
+  as you wrote it in ES2015. Set break points, single step, inspect variables. It's
+  exactly as you want it.</p>
+
+<h3>Additional Reading</h3>
+
+<p>I enjoyed reading <a href="https://github.com/lukehoban/es6features">Luke
+  Hoban's</a> summary on ES2015 features.</p>
+
+<p>JavaScript is based on ECMAScript-262 and if you read the <a
+  href="http://www.ecma-international.org/ecma-262/6.0/">formal 6th edition
+  specification</a> you'll learn a lot, and you might go completely mental.</p>
+
+<p>Many refer to the <a href="https://kangax.github.io/compat-table/es6/">Kangex
+  table</a> tracking browser compatibility.</p>
+
+<h3>Acknowledging</h3>
+
+<p>I had the great fortune of giving a talk called <a
+  href="http://www.slideshare.net/KaDawg/measuring-the-mobile-experience-the-analytics-of-handheld-ux">Measuring
+  the Mobile Experience: The Analytics of Handheld UX</a> at <a
+  href="http://www.html5devconf.com/speakers.html">HTML5DevConf
+  in San Fransisco</a> in Oct 2015.</p>
+
+<p>Also an attendee, I dropped in on a session by David Greenspan. His call to
+  action was <em>learn ES2015 now</em> - and so I am! All of this work is a result
+  of his influence.</p>
+
+<h3>Bonus</h3>
+
+<p>Some of this work takes advantage of the browser's
+  <a href="http://www.html5rocks.com/en/tutorials/webperformance/usertiming/">User
+    Timing</a> API for high-resolution timers. APIs include:</p>
+<code>performance.mark(), .measure(), .getEntriesByType()</code>
+
+<p>These are applicable for a performance-monitoring system.</p>

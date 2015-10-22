@@ -12,6 +12,7 @@
 
   function reportColors() {
     console.log(`Let's include all of the colors: ${allColors}`);
+    // string interpolation
     console.log('=================');
   }
 
