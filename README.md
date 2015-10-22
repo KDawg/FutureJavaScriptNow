@@ -7,8 +7,8 @@
   a very different looking language. Browser makers are slowly implementing
   the updates as you read this.</p>
 
-<p>To keep current I want to learn what's coming
-  now. That sounds difficult, but we can use <a href="https://babeljs.io/">BabelJS</a>
+<p>I don't want to wait. To keep current I want to learn what's coming, now. That sounds
+  difficult, but we can use <a href="https://babeljs.io/">BabelJS</a>
   to <a href="https://en.wikipedia.org/wiki/Source-to-source_compiler">transpile</a>
   code written in new ES2015 syntax to plain old JS that runs in any browser.
   You can have the future now!</p>
