@@ -29,7 +29,12 @@
 <h3>Installing BabelJS for ES2015 Now</h3>
 
 <p>Install BabelJS in OSX <strong>Terminal</strong> with this command:</p>
-<code>npm install -g babel</code>
+<code>npm install -g babel-cli</code><br/>
+<code>npm install babel-preset-es2015</code><br/>
+<p>BabelJS recently refactored itself and now it's plugin based with
+	configurations including and activating them. That's the point of the second
+	install above. Read more about what that package
+	<a href="http://babeljs.io/docs/plugins/preset-es2015/">set supports.</a></p>
 
 <h3>Running</h3>
 
